@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+    position: inherit;
+    justify-content: center;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+div {
+    position: relative;
+    z-index: 2;
+}
+
+input[type="number"] {
+    color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 20px;
+    
+}
+
+.alas, .tinggi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.gambar {
+    display: flex;
+    width: 80vh;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 10rem;
+}
+
+.gambar img:hover {
+    transform: scale(1.1);
+}
+
+.prev, .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px; 
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+  
+.prev button, .next button {
+    margin: 0 10rem; 
+}
+
+.button-sgt, .button-jjg, .btn1, .btn2, .btn3, .btn4{
+    justify-content: center;
+    align-items: center;
+}
+.button-sgt, .button-jjg {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1;
+    border-radius: 10px;
+    background-color:rgb(123, 32, 62);
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 520px;
+    height: 30px;
+}
+
+.btn1, .btn2, .btn3, .btn4 {
+    display: none;
+    margin: 10px auto 0;
+    width: 520px;
+    height: 30px;
+    margin-top: 30;
+    color: #fff;
+    font-size: 1;
+    border-radius: 10px;
+    background-color: #ec9999;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#61cabc;
+}
+
+/* label {
+    display: block;
+    margin-bottom: 10px;
+} */
+
+#form-container, #keliling-form, #luas-form-jjg, #keliling-form-jjg{
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+
+#result-luas, #result-keliling, #result-luas-jjg, #result-kll-jjg{
+    display: block;
+}
+
+.help-button-container {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    margin: 20px; 
+    z-index: 1000; 
+}
+  
+.help-button {
+    background-color: #34bdd8;
+    border-radius: 10px; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+
+}
+  
+.help-button:hover {
+    background-color: #38ae3c; 
+}
+
+/* // By : Ragil Aldyansyah (02-09-2024 RevoU) - Foundamental Course */
