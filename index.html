@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>MiniProject RevoU</title>
+</head>
+    <body>
+        <h1>Mini Project RevoU</h1>
+            <p>Hai Sobat, Selamat Datang di Mini Project RevoU<br>
+                Ini merupakan sebuah website sederhana untuk menghitung Luas dan Keliling<br>
+                Bangun Datar, yaitu Segitiga dan Jajar Genjang.<br></p>
+        
+            <!-- bagian button -->
+            <div class="button-sgt">
+                <button class="button-sgt">Segitiga</button>
+            </div>
+                <br>
+                    <div class="button-jjg">
+                        <button class="button-jjg">Jajar Genjang</button> 
+                    </div>
+                <br>
+            <div id="button-opsi">
+                <div class="btn-grup-sgt">
+                    <button class="btn1">Luas Segitiga</button>
+                    <button class="btn2">Keliling Segitiga</button>
+                <div class="btn-grup-jjr">
+                    <button class="btn3">Luas Jajar Genjang</button>
+                    <button class="btn4">Keliling Jajar Genjang</button>
+                </div>
+            </div>
+        
+        <!-- bagian slider gambar -->
+        <div class="slider-container">
+            <div class="gambar">
+                <img src="asset\luas_segitiga.png" alt="Rumus Luas Segitiga" class="slider-image">
+                <img src="asset\k-sgt.png" alt="Rumus Keliling Segitiga" class="slider-image">
+                <img src="asset\luas_jajargenjang.png" alt="Rumus Luas Jajar Genjang" class="slider-image">
+                <img src="asset\k-jjg.png" alt="Rumus Keliling Jajar Genjang" class="slider-image">
+            </div>
+                <br>
+            <div class="slider-controls">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+            <hr>
+        <h2>Form Hitung</h2>
+
+        <!-- container form luas segitiga -->
+        <div id="form-container">
+            <form>
+                <label for="luas-sgt"></label>
+                    <input type="number" id="luas-sgt" name="luas-sgt" placeholder="Alas Segitiga"><br><br>
+                        <label for="tinggi-sgt"></label>
+                            <input type="number" id="tinggi-sgt" name="tinggi-sgt" placeholder="Tinggi Segitiga"><br><br>
+                        <button type="button" id="hitung-input">Hitung</button>
+                    <button type="button" id="reset-input">Reset</button>
+            </form>
+            <p id="result-luas"></p>
+        </div>
+
+        <!-- container form keliling segitiga -->
+        <div id="form-container"></div>
+            <form id="keliling-form">
+                <label for="sisi1"></label>
+                    <input type="number" id="sisi1" name="sisi1" placeholder="Sisi 1"><br><br>
+                        <label for="sisi2"></label>
+                            <input type="number" id="sisi2" name="sisi2" placeholder="Sisi 2"><br><br>
+                                <label for="sisi3"></label>
+                            <input type="number" id="sisi3" name="sisi3" placeholder="Sisi 3"><br><br>
+                        <button type="button" id="hitung-input-kll">Hitung</button>
+                    <button type="button" id="reset-input-kll">Reset</button>
+            </form>
+            <p id="result-keliling"></p>
+        </div>
+
+        <!-- container luas jajar genjang -->
+        <div id="form-container"></div>
+            <form id="luas-form-jjg">
+                <label for="luas-jjg"></label>
+                    <input type="number" id="luas-jjg" name="luas-jjg" placeholder="Alas Jajar Genjang"><br><br>
+                        <label for="tinggi-jjg"></label>
+                            <input type="number" id="tinggi-jjg" name="tinggi-jjg" placeholder="Tinggi Jajar Genjang"><br><br>
+                        <button type="button" id="hitung-input-luas-jjg">Hitung</button>
+                    <button type="button" id="reset-input-luas-jjg">Reset</button>
+            </form>
+            <p id="result-luas-jjg"></p>
+        </div>
+
+        <!-- container keliling jajar genjang -->
+        <div id="form-container"></div>
+            <form id="keliling-form-jjg">
+                <label for="nilai-a-jjg"></label>
+                    <input type="number" id="nilai-a-jjg" name="nilai-a-jjg" placeholder="Nilai a"><br><br>
+                        <label for="nilai-b-jjg"></label>
+                            <input type="number" id="nilai-b-jjg" name="nilai-b-jjg" placeholder="Nilai b"><br><br>
+                        <button type="button" id="hitung-input-kll-jjg">Hitung</button>
+                    <button type="button" id="reset-input-kll-jjg">Reset</button>
+            </form>
+            <p id="result-kll-jjg"></p>
+        </div>
+
+        <!-- tombol bantuan/tutorial-->
+        <div class="help-button-container">
+            <button class="help-button">Bantuan?</button>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
+
+<!-- By : Ragil Aldyansyah (02-09-2024 RevoU) - Foundamental Course -->
